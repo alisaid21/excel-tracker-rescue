@@ -1,0 +1,34 @@
+{
+  "after": {
+    "file": "WO_Tracker_fixed.xlsx",
+    "size_mb": 0.22,
+    "cell_formats": 7,
+    "used_range_last_row": 3001,
+    "cells_stored": 45565,
+    "formulas": 12271,
+    "volatile_formulas": 1,
+    "whole_column_formulas": 0,
+    "cf_rules": 3,
+    "findings": 0,
+    "data_rows": 3000,
+    "openpyxl_load_s": 0.48,
+    "libreoffice_recalc_s": 5.2,
+    "libreoffice_runs": 3
+  },
+  "before": {
+    "file": "WO_Tracker_bloated.xlsx",
+    "size_mb": 2.79,
+    "cell_formats": 25057,
+    "used_range_last_row": 60001,
+    "cells_stored": 943017,
+    "formulas": 60000,
+    "volatile_formulas": 30000,
+    "whole_column_formulas": 20000,
+    "cf_rules": 753,
+    "findings": 7,
+    "data_rows": 3000,
+    "openpyxl_load_s": 8.94,
+    "libreoffice_recalc_s": 482.6,
+    "libreoffice_runs": 1
+  }
+}

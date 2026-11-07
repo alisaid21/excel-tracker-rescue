@@ -1,0 +1,65 @@
+{
+  "file": "WO_Tracker_fixed.xlsx",
+  "size_bytes": 235521,
+  "sheets": {
+    "WO Log": {
+      "dimension": "A1:O3001",
+      "cells": 45015,
+      "value_cells": 32787,
+      "last_value_row": 3001,
+      "last_formula_row": 3001,
+      "last_cell_row": 3001,
+      "formulas": 12000,
+      "volatile_formulas": 0,
+      "whole_column_formulas": 0,
+      "cf_blocks": 2,
+      "cf_rules": 3,
+      "cf_rules_whole_column": 0,
+      "cf_rows_covered": 9000,
+      "tables": 1
+    },
+    "Summary": {
+      "dimension": "A1:E204",
+      "cells": 546,
+      "value_cells": 276,
+      "last_value_row": 204,
+      "last_formula_row": 204,
+      "last_cell_row": 204,
+      "formulas": 270,
+      "volatile_formulas": 0,
+      "whole_column_formulas": 0,
+      "cf_blocks": 0,
+      "cf_rules": 0,
+      "cf_rules_whole_column": 0,
+      "cf_rows_covered": 0,
+      "tables": 0
+    },
+    "Settings": {
+      "dimension": "A1:B4",
+      "cells": 4,
+      "value_cells": 3,
+      "last_value_row": 4,
+      "last_formula_row": 3,
+      "last_cell_row": 4,
+      "formulas": 1,
+      "volatile_formulas": 1,
+      "whole_column_formulas": 0,
+      "cf_blocks": 0,
+      "cf_rules": 0,
+      "cf_rules_whole_column": 0,
+      "cf_rows_covered": 0,
+      "tables": 0
+    }
+  },
+  "findings": [],
+  "defined_names": 1,
+  "styles": {
+    "cell_formats": 7,
+    "named_style_formats": 1,
+    "named_styles": 1,
+    "fonts": 5,
+    "fills": 2,
+    "borders": 1,
+    "cf_formats": 6
+  }
+}

@@ -1,0 +1,32 @@
+
+=== tracker_doctor: WO_Tracker_fixed.xlsx ===
+File size          0.22 MB
+Cell formats       7   (fonts 5, fills 2, CF formats 6)
+
+[WO Log]
+  Data ends at row        3,001
+  Used range ends at row  3,001
+  Cells stored            45,015
+  Formulas                12,000  (volatile 0, whole-column 0)
+  Conditional formatting  3 rules in 2 ranges (0 whole-column)
+  Excel Tables            1
+
+[Summary]
+  Data ends at row        204
+  Used range ends at row  204
+  Cells stored            546
+  Formulas                270  (volatile 0, whole-column 0)
+  Conditional formatting  0 rules in 0 ranges (0 whole-column)
+  Excel Tables            0
+
+[Settings]
+  Data ends at row        4
+  Used range ends at row  4
+  Cells stored            4
+  Formulas                1  (volatile 1, whole-column 0)
+  Conditional formatting  0 rules in 0 ranges (0 whole-column)
+  Excel Tables            0
+
+Findings
+  None. This workbook is in good shape.
+

@@ -1,0 +1,76 @@
+{
+  "file": "WO_Tracker_bloated.xlsx",
+  "size_bytes": 2922629,
+  "sheets": {
+    "WO TRACKER": {
+      "dimension": "A1:Q60001",
+      "cells": 943017,
+      "value_cells": 32789,
+      "last_value_row": 3001,
+      "last_formula_row": 10001,
+      "last_cell_row": 60001,
+      "formulas": 60000,
+      "volatile_formulas": 30000,
+      "whole_column_formulas": 20000,
+      "cf_blocks": 377,
+      "cf_rules": 753,
+      "cf_rules_whole_column": 3,
+      "cf_rows_covered": 3151728,
+      "tables": 0
+    }
+  },
+  "findings": [
+    [
+      "WO TRACKER",
+      "HIGH",
+      "Used range runs to row 60,001 but data stops at row 3,001.",
+      "Delete the empty formatted rows below the data, then save so Excel resets the used range."
+    ],
+    [
+      "WO TRACKER",
+      "HIGH",
+      "Formulas continue to row 10,001, 7,000 rows past the data.",
+      "Convert the data to an Excel Table so formulas fill down only as rows are added."
+    ],
+    [
+      "WO TRACKER",
+      "HIGH",
+      "30,000 formulas use volatile functions (TODAY, NOW, OFFSET, INDIRECT...), so they recalculate on every edit.",
+      "Put TODAY() in one settings cell and reference it; replace OFFSET/INDIRECT with direct references."
+    ],
+    [
+      "WO TRACKER",
+      "HIGH",
+      "20,000 formulas scan whole columns (A:A).",
+      "Calculate per-site or per-person counts once in a summary sheet, over the table's columns only."
+    ],
+    [
+      "WO TRACKER",
+      "MEDIUM",
+      "753 conditional formatting rules in 377 separate ranges.",
+      "Delete them all and recreate a handful of rules scoped to the data range."
+    ],
+    [
+      "WO TRACKER",
+      "MEDIUM",
+      "3 conditional formatting rules cover entire columns.",
+      "Limit each rule to the rows that actually hold data."
+    ],
+    [
+      "Workbook",
+      "HIGH",
+      "25,057 distinct cell formats (Excel's limit is about 64,000).",
+      "Clear formats on the data and reapply a small, consistent set of styles."
+    ]
+  ],
+  "defined_names": 0,
+  "styles": {
+    "cell_formats": 25057,
+    "named_style_formats": 1,
+    "named_styles": 1,
+    "fonts": 32,
+    "fills": 1068,
+    "borders": 2,
+    "cf_formats": 3
+  }
+}

@@ -1,0 +1,29 @@
+
+=== tracker_doctor: WO_Tracker_bloated.xlsx ===
+File size          2.79 MB
+Cell formats       25,057   (fonts 32, fills 1,068, CF formats 3)
+
+[WO TRACKER]
+  Data ends at row        3,001
+  Used range ends at row  60,001
+  Cells stored            943,017
+  Formulas                60,000  (volatile 30,000, whole-column 20,000)
+  Conditional formatting  753 rules in 377 ranges (3 whole-column)
+  Excel Tables            0
+
+Findings
+  [HIGH] WO TRACKER: Used range runs to row 60,001 but data stops at row 3,001.
+         Fix: Delete the empty formatted rows below the data, then save so Excel resets the used range.
+  [HIGH] WO TRACKER: Formulas continue to row 10,001, 7,000 rows past the data.
+         Fix: Convert the data to an Excel Table so formulas fill down only as rows are added.
+  [HIGH] WO TRACKER: 30,000 formulas use volatile functions (TODAY, NOW, OFFSET, INDIRECT...), so they recalculate on every edit.
+         Fix: Put TODAY() in one settings cell and reference it; replace OFFSET/INDIRECT with direct references.
+  [HIGH] WO TRACKER: 20,000 formulas scan whole columns (A:A).
+         Fix: Calculate per-site or per-person counts once in a summary sheet, over the table's columns only.
+  [MEDIUM] WO TRACKER: 753 conditional formatting rules in 377 separate ranges.
+         Fix: Delete them all and recreate a handful of rules scoped to the data range.
+  [MEDIUM] WO TRACKER: 3 conditional formatting rules cover entire columns.
+         Fix: Limit each rule to the rows that actually hold data.
+  [HIGH] Workbook: 25,057 distinct cell formats (Excel's limit is about 64,000).
+         Fix: Clear formats on the data and reapply a small, consistent set of styles.
+
